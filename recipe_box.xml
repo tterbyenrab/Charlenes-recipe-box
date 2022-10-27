@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Charlene Nielsen's Recipe Box</title>
+            <title type="sub">A Selected Electronic Edition</title>
+            <author>Charlene Nielsen<ref target="#n01"/></author>
+            <editor xml:id="bb">Brett Barney</editor>
+            <editor xml:id="ow">Orson Williams</editor>
+            <respStmt>
+               <resp>transcription and encoding of recipe</resp>
+               <persName sameAs="#bb">Brett Barney</persName>
+            </respStmt>
+            <respStmt>
+               <resp>research and encoding of editorial notes</resp>
+               <persName sameAs="#ow">Orson Williams</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>
+               <persName sameAs="#bb">Brett Barney</persName>
+               <persName sameAs="#ow">Orson Williams</persName>
+            </authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+                  Attribution 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <respStmt>
+                  <resp>collector</resp>
+                  <persName>Clarissa Walton</persName>
+               </respStmt>
+               <orgName>Archives &#38; Special Collections, University of Nebraska-Lincoln Libraries</orgName>
+               <idno>RG 03-23-15</idno>
+            </bibl>
+            <bibl>
+               <author>Christian Nielsen</author>
+               <title>Charlene Nielsen's Recipe Box</title>
+               <ptr target="https://cniels.github.io/RecipeBox/"/>
+            </bibl>
+            <bibl>
+               <title level="j">Rocky Mountain Cooking</title>
+               <title level="a">Charlene Nielsen's Farm Kitchen</title>
+               <date when="2010-03">March 2010</date>
+               <biblScope unit="volume">13</biblScope>
+               <biblScope unit="issue">2</biblScope>
+               <biblScope unit="page">3&#8211;6, 10</biblScope>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <settingDesc>
+            <p>This digital edition was produced as a reference example during the fall semester of English 478/878: Digital Archives and Editions, taught by Kenneth M. Price</p>
+         </settingDesc>
+         <handNotes>
+            <handNote xml:id="h02" script="cursive" medium="blue_ballpoint"/>
+            <handNote xml:id="h01" script="cursive" medium="black_ballpoint"/>
+            <handNote xml:id="h03" script="cursive" medium="pencil"/>
+            <handNote xml:id="h04" script="print" medium="typewriter"/>
+            <handNote xml:id="h05" script="print" medium="press"/>
+         </handNotes>
+      </profileDesc>
+      <revisionDesc>
+         <change who="#ow" when="2022-11-05">created granular ingredients encoding</change>
+         <change who="#bb" when="2022-10-27">transcribed and initial markup</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb facs="111-p1.jpg"/>
+         <div type="recipe" xml:id="r01">
+            <!-- NOTE RULE FOR VALUE OF @xml:id (must begin with a letter) -->
+            <head>Pumpkin <choice>
+                  <sic>desert</sic>
+                  <corr>dessert</corr>
+               </choice>
+            </head>
+            <note type="authorial" hand="#h01">Alane<ref target="#n03"/>&#8212;Thanksgiving 01
+               good&#8212;very rich</note>
+            <!-- NOTE THE @type HERE -->
+            <div type="ingredients" xml:id="r01_i1">
+               <list>
+                  <item>1 c. sifted flour</item>
+                  <item>1/2 c. <ref target="#n02">quick oats</ref></item>
+                  <item>1/2 c. brown sugar</item>
+                  <item>1/2 c. butter/marg.</item>
+               </list>
+            </div>
+            <div type="instructions" xml:id="r01_s1" corresp="#r01_i1">
+               <list>
+                  <item>cream</item>
+                  <item>13" x 9" pan</item>
+                  <item>bake 15 min&#212;350°</item>
+               </list>
+            </div>
+            <div type="ingredients" xml:id="r01_i2">
+               <list>
+                  <item>1 lb. can pumkin</item>
+                  <item>1 13 oz. evap. milk</item>
+                  <item>2 eggs -</item>
+                  <item>3/4 c. sugar -</item>
+                  <item>1/2 tsp salt</item>
+                  <item>1 tsp cinnamon</item>
+                  <item>1/2 tsp ginger</item>
+                  <item>1/4 tsp cloves</item>
+               </list>
+            </div>
+            <pb facs="111-p2.jpg"/>
+            <div type="instructions" xml:id="r01_s2" corresp="#r01_i2">
+               <list>
+                  <item>Bake 350° 20min</item>
+               </list>
+               <note type="authorial" hand="#h02">Note: I used "Table cream" instead of evap. milk.</note>
+               <div type="ingredients" xml:id="r01_i3">
+                  <list>
+                     <item>1/2 c. chopped pecans</item>
+                     <item>1/2 c. brown sugar</item>
+                     <item>2T. Butter</item>
+                  </list>
+               </div>
+               <div type="instructions" xml:id="r01_s3" corresp="#r01_i3">
+                  <list>
+                     <item>combine</item>
+                     <item>sprinkle over filling -</item>
+                     <item>Bake longer 20 min or so until topping is set.</item>
+                  </list>
+               </div>
+            </div>
+         </div>
+
+<!-- ADDITIONAL RECIPES WOULD BE ADDED BELOW -->
+         <pb/>
+         <div type="recipe" xml:id="r02">
+            <div/>
+            <div/>
+         </div>
+
+      </body>
+
+<!-- THIS NEXT SECTION IS FOR THE EDITORIAL NOTES -->
+      
+      <back>
+         <div type="notes">
+            <note xml:id="n01">Charlene Heatwole was born in October 1926 in La Junta, Colorado. She grew up in a dour Mennonite family consisting of her parents and two siblings. She later left home to attend Goshen College, earning a bachelor’s degree in education. Upon graduation, she returned to Southeastern Colorado to work as a teacher. There, she met local farmer Al Nielsen, whom she married in 1951. Together, they raised three children on the farm, and she continued to work as a social worker. She loved to cook, volunteer at the Cheraw Methodist Church, and travel with her friends. Later in life, she enjoyed her chickens and eight grandchildren. She died in Cheraw, Colorado in February 2020.</note>
+            <note xml:id="n02">Alane is the first-born daughter of Charlene and Al (b. 1952). She is an avid cook who currently lives in Colorado Springs.</note>
+            <note xml:id="n03">"Quick oats" are oats that have been steamed and rolled extremely thin. They are rolled much thinner than "old-fashioned" rolled oats but, in contrast to "instant" oats, have not been fully cooked and sweetened or flavored.</note>
+         </div>
+      </back>
+   </text>
+</TEI>
