@@ -1,0 +1,29 @@
+TEI Header
+
+1. <fileDesc> 
+   mandatory
+   "contains a full bibliographic description of an electronic file"
+   has three mandatory elements: 
+       <titleStmt>
+       <publicationStmt>
+       <sourceDesc>
+       
+2. <encodingDesc>
+   not required but "highly recommended"
+   "documents the relationship between an electronic text and the source or sources from which it was derived
+   some useful child elements:
+       <projectDesc>
+           "describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected"
+       <samplingDesc>
+           "contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection"
+       <editorialDecl>
+           "provides details of editorial principles and practices applied during the encoding of a text"
+       
+3. <profileDesc>
+   optional
+   "provides a detailed description of non-bibliographic aspects of a text"
+   essentially, this is a place to put other metadata that doesn't seem to fit anywhere else in the TEI header
+   
+4. <revisionDesc>
+   optional but "highly recommended"
+   "summarizes the revision history for a file"
