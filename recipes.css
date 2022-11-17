@@ -9,7 +9,7 @@ text-indent: 50px;
 
 
 h1 {
-font-family: Zapf-Chancery, cursive;
+font-family: Florence, Parkavenue, Zapf-Chancery, cursive;
 text-decoration: underline;
     
 }
@@ -30,6 +30,6 @@ div.notes /* name of your class here */ {
 
 
 body /* if you want the background for the whole page, you should use the "body" selector */ {
-background-color: rgb(0,128,128);
+background-color: rgb(80,128,128);
     
 }
