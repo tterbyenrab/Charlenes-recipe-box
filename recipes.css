@@ -1,7 +1,7 @@
 p {
 text-align: left;
 font-family: times-new-roman;
-font-size: 10px;
+font-size: 12px;
 text-indent: 50px; 
 
 }
@@ -27,6 +27,12 @@ div.notes /* name of your class here */ {
   margin-left: 80px;   
 }
 
+ul.instructions {
+    list-style-image: url('spoons.gif');
+}
+    
+    
+}
 
 body /* if you want the background for the whole page, you should use the "body" selector */ {
 background-color: rgb(128,98,78);
