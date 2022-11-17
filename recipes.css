@@ -29,6 +29,7 @@ div.notes /* name of your class here */ {
 
 ul.instructions {
     list-style-image: url('spoons.gif');
+    list-style-position: outside;
 }
     
     
