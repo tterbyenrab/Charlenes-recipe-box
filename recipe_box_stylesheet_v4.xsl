@@ -96,7 +96,15 @@
         </img>
     </xsl:template>
     
-    <xsl:template match="tei:teiHeader"/><!-- NOTICE THAT THIS ONE IS EMPTY. WE WILL TALK ABOUT WHAT THAT DOES. -->
+    <xsl:template match="tei:back">
+        <hr/>
+ <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:note">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+    <xsl:template match="tei:teiHeader"/>
     
     
 
