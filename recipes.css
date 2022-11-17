@@ -29,15 +29,14 @@ div.notes /* name of your class here */ {
 
 ul.instructions {
     list-style-image: url('spoon.gif');
-    list-style-position: outside;
+    list-style-position: inside;
     margin: 0;
     padding: 0;
 }
     
     
-}
 
 body /* if you want the background for the whole page, you should use the "body" selector */ {
-background-color: rgb(100,98,78);
+background-color: rgb(170,170,155);
     
 }
