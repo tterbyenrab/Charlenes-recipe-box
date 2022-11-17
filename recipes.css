@@ -2,7 +2,6 @@ p {
 text-align: left;
 font-family: times-new-roman;
 font-size: 10px;
-color: red;
 text-indent: 50px; 
 
 }
@@ -30,6 +29,6 @@ div.notes /* name of your class here */ {
 
 
 body /* if you want the background for the whole page, you should use the "body" selector */ {
-background-color: rgb(80,128,128);
+background-color: rgb(128,98,78);
     
 }
