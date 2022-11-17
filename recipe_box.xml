@@ -81,13 +81,13 @@
                   <corr>dessert</corr>
                </choice>
             </head>
-            <note type="authorial" hand="#h01">Alane<ref target="#n03"/>&#8212;Thanksgiving 01
+            <note type="authorial" hand="#h01">Alane<ref target="#n02" xml:id="ref02"/>&#8212;Thanksgiving 01
                good&#8212;very rich</note>
             <!-- NOTE THE @type HERE -->
             <div type="ingredients" xml:id="r01_i1">
                <list>
                   <item>1 c. sifted flour</item>
-                  <item>1/2 c. <ref target="#n02">quick oats</ref></item>
+                  <item>1/2 c. quick oats<ref xml:id="r03" target="#n03"/></item>
                   <item>1/2 c. brown sugar</item>
                   <item>1/2 c. butter/marg.</item>
                </list>
@@ -147,9 +147,9 @@
       
       <back>
          <div type="notes">
-            <note xml:id="n01">Charlene Heatwole was born in October 1926 in La Junta, Colorado. She grew up in a dour Mennonite family consisting of her parents and two siblings. She later left home to attend Goshen College, earning a bachelor’s degree in education. Upon graduation, she returned to Southeastern Colorado to work as a teacher. There, she met local farmer Al Nielsen, whom she married in 1951. Together, they raised three children on the farm, and she continued to work as a social worker. She loved to cook, volunteer at the Cheraw Methodist Church, and travel with her friends. Later in life, she enjoyed her chickens and eight grandchildren. She died in Cheraw, Colorado in February 2020.</note>
-            <note xml:id="n02">Alane is the first-born daughter of Charlene and Al (b. 1952). She is an avid cook who currently lives in Colorado Springs.</note>
-            <note xml:id="n03">"Quick oats" are oats that have been steamed and rolled extremely thin. They are rolled much thinner than "old-fashioned" rolled oats but, in contrast to "instant" oats, have not been fully cooked and sweetened or flavored.</note>
+            <note type="editorial_general" xml:id="n01">Charlene Heatwole was born in October 1926 in La Junta, Colorado. She grew up in a dour Mennonite family consisting of her parents and two siblings. She later left home to attend Goshen College, earning a bachelor’s degree in education. Upon graduation, she returned to Southeastern Colorado to work as a teacher. There, she met local farmer Al Nielsen, whom she married in 1951. Together, they raised three children on the farm, and she continued to work as a social worker. She loved to cook, volunteer at the Cheraw Methodist Church, and travel with her friends. Later in life, she enjoyed her chickens and eight grandchildren. She died in Cheraw, Colorado in February 2020.</note>
+            <note type="editorial_gloss" xml:id="n02" target="#ref02">Alane is the first-born daughter of Charlene and Al (b. 1952). She is an avid cook who currently lives in Colorado Springs.</note>
+            <note type="editorial_gloss" xml:id="n03" target="#ref03">"Quick oats" are oats that have been steamed and rolled extremely thin. They are rolled much thinner than "old-fashioned" rolled oats but, in contrast to "instant" oats, have not been fully cooked and sweetened or flavored.</note>
          </div>
       </back>
    </text>
